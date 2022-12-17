@@ -1,219 +1,190 @@
 <!DOCTYPE html>
 <html>
 
-  <head>
-    <title>MyohTheWeb</title>
-    <link rel="icon" type="image/x-icon" href="/supercorn.gif" defer>
-    <style>
-      @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap');
-      @import url('https://unpkg.com/@fortawesome/fontawesome-free@5.15.4/css/all.min.css');
-      @import url('https://fonts.googleapis.com/css2?family=Square+Peg&display=swap');
-      @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,600&display=swap');
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Portal</title>
+    <meta name="description" content="Portal is a highly sophisticated proxy used for evading internet censorship or accessing websites in a controlled sandbox using the power of service-workers. Unblock sites today!" />
+    <meta name="keywords" content="proxy, web proxy, ultraviolet, service workers, unblock websites, unblock chromebook, free web proxy, proxy list, proxy sites, un block chromebook, online proxy, proxy server, proxysite, proxy youtube, bypass securly, bypass iboss, bypass lightspeed filter, holy unblocker, chromebooks, titanium network, unblock youtube, youtube proxy, unblocked youtube, youtube unblocked, portal">
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#434c5e">
+    <meta name="googlebot" content="index, follow, snippet" />
+  
 
-      @keyframes fadeInAnimation {
-        0% {
-          opacity: 0;
-        }
+   
 
-        100% {
-          opacity: 1;
-        }
-      }
 
-      * {
-        font-family: Roboto;
-      }
-
-      body {
-        margin: 0;
-        color: darkorchid;
-        background-image: linear-gradient(135deg, red, orange, yellow, green, blue, indigo, violet);
-        display: flex;
-        flex-direction: column;
-        min-height: 100vh;
-        animation: fadeInAnimation ease-in-out 0.3s;
-        animation-iteration-count: 1;
-        animation-fill-mode: forwards;
-        overflow: hidden;
-      }
-
-      .fa-magnifying-glass {
-        color: white;
-      }
-
-      .logo-wrapper {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        margin-top: 10%;
-      }
-
-      .logo {
-        width: 150px;
-      }
-
-      .logo-wrapper .text {
-        font-size: 75px;
-        font-family: Roboto;
-        color: #FFF;
-      }
-
-      .logo-wrapper h1 {
-        color: darkorchid;
-        font-size: 36px;
-        font-family: Square Peg, cursive;
-        text-shadow: #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px,
-          #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px;
-        -webkit-font-smoothing: antialiased;
-      }
-
-      form {
-        margin-top: 5mm;
-        display: flex;
-        justify-content: center;
-      }
-
-      .desc {
-        display: flex;
-        justify-content: center;
-        text-align: center;
-        margin-top: 5mm;
-      }
-
-      .desc p {
-        width: 560px;
-        color: lightskyblue;
-        font-size: 18px;
-        font-family: Nunito;
-        text-shadow: #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px,
-          #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px;
-        -webkit-font-smoothing: antialiased;
-      }
-
-      form input {
-        font-family: monospace;
-        background-color: #d6d6ff;
-        text-align: center;
-        height: 24px;
-        width: 4in;
-        border: 1px solid #009dff;
-        color: var(--text-color);
-        border-radius: 7px;
-        outline: none;
-        padding: 2.5px 3px 2.5px 3px;
-        color: navy;
-        margin-right: 5px;
-      }
-
-      #aboutbutton {
-        font-family: monospace;
-        cursor: pointer;
-        text-align: center;
-        text-decoration: none;
-        outline: none;
-        color: cyan;
-        background-image: linear-gradient(-110deg, red, green, blue);
-        border: 1px 1px 1px 1px black;
-        border-radius: 7px;
-        font-size: 20px;
-        padding: 2.5px 22px;
-        margin-right: default;
-        box-shadow: #000 0px 0px 5px;
-        justify-content: center;
-        font-size: 14px;
-        height: 31px;
-        width: 1in;
-      }
-
-      form input:focus {
-        border: 1px solid lightsteelblue;
-        border-radius: 5px;
-        animation: fadeInAnimation ease-in-out 0.3s;
-        animation-iteration-count: 1;
-        animation-fill-mode: forwards;
-      }
-
-      html {
-        animation-name: fadeInAnimation;
-        animation-duration: 0.3s;
-        visibility: visible;
+  <style>
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap');
+@import url('https://unpkg.com/@fortawesome/fontawesome-free@5.15.4/css/all.min.css');
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
         opacity: 1;
-      }
+    }
+}
 
-    </style>
-    <script src="uv/uv.bundle.js" defer></script>
+* {
+    font-family: Roboto;
+}
+
+body {
+    margin: 0;
+    background: #000000;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    animation: fadeInAnimation ease-in-out 0.3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.fa-magnifying-glass {
+    color: white;
+}
+
+.logo-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 10%;
+}
+
+.logo {
+    width: 400px;
+}
+
+.logo-wrapper .text {
+    font-size: 75px;
+    font-family: "Roboto";
+    color: #FFF;
+}
+
+.logo-wrapper h1 {
+    color: white;
+}
+
+footer {
+    margin-top: auto;
+    width: 93%;
+    align-self: center;
+    height: 80px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+  color: #FFF;
+}
+
+footer a,
+footer span {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #FFF;
+    font-size: 15px;
+}
+
+footer a {
+    cursor: pointer;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+}
+
+.desc {
+    display: flex;
+    justify-content: center;
+}
+
+.desc p {
+    width: 560px;
+    color: rgba(253, 253, 253, 0.514);
+}
+
+form input {
+    background: none;
+    font-family: inherit;
+    padding: 0px 17px;
+    height: 48px;
+    border: 1px solid rgb(255, 255, 255, .2);
+    color: var(--text-color);
+    border-radius: 3px;
+    outline: none;
+    width: 350px;
+    margin-top: 0px;
+    border-radius: 50px;
+    color: #FFF;
+}
+form input:hover{
+    animation: fadeInAnimation ease-in-out 0.3s; 
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    border: 1px solid rgb(255,255,255)
+  
+    
+}
+form input:focus {
+    border: 1px solid rgba(253, 253, 253, 0.514);
+    border-radius: 6px;
+    animation: fadeInAnimation ease-in-out 0.3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+.desc footer{
+  text-align:center;
+}
+
+</style>
+<script src="uv/uv.bundle.js" defer></script>
     <script src="uv/uv.config.js" defer></script>
     <script src="register-sw.js" defer></script>
     <script src="search.js" defer></script>
     <script src="index.js" defer></script>
+</head>
+<body>
+<div class="logo-wrapper">
+<img src="portal.png" class="logo"></img>
 
-  </head>
+  
 
-  <body>
+        <img src="title.gif"></img>
 
-    <div title="MyohTheWeb Logo" class="logo-wrapper">
-      <img class="logo" src="supercorn.gif" alt="a sparkly unicorn" />
-      <h1 title="MyohTheWeb">MyohTheWeb</h1>
+     
+   </div> 
+    <div  class="desc">
+        <p class="desc">The Portal to a free internet</p>
     </div>
+  
     <form id="uv-form" class="flex-center">
       <input
         id="uv-search-engine"
         value="https://www.google.com/search?q=%s"
         type="hidden"
       />
-      <input id="uv-address" type="text" placeholder="Search the web with MyohTheWeb" />
-      <input type="submit" id="aboutbutton" value="Go!">
+      <input id="uv-address" type="text" placeholder="Enter the portal today!" />
     </form>
-    <div title="r3ality" class="desc">
-      <p>Unlimited access to the world wide web is now a r3ality<br>Made by r3alitycubedSK#7958<br><br>Visit <a href="https://r3alitycubedsk.edjiang1234.repl.co"><i>my website</i></a> for more cool stuff!</p>
-    </div>
-  </body>
 
+    <footer>
+Made by MADSCIENTIST90
+
+    </footer>
+
+
+
+
+
+
+</body>
 
 </html>
-<script defer>
-  const colors = ["red", "orange", "yellow", "green", "blue", "indigo", "violet"];
+    
 
-  const numBalls = 77;
-  const balls = [];
-
-  for (let i = 0; i < numBalls; i++) {
-    let ball = document.createElement("div");
-    ball.style.background = colors[Math.floor(Math.random() * colors.length)];
-    ball.style.left = `${Math.floor(Math.random() * 100)}vw`;
-    ball.style.top = `${Math.floor(Math.random() * 100)}vh`;
-    ball.style.transform = `scale(${Math.random()})`;
-    ball.style.width = `${Math.random()}em`;
-    ball.style.height = ball.style.width;
-    ball.style.position = "fixed";
-    ball.style.borderRadius = "30%";
-    ball.style.opacity = 0.5;
-    ball.style.overflow = "hidden";
-    balls.push(ball);
-    document.body.append(ball);
-  }
-
-
-  balls.forEach((el, i, ra) => {
-    let to = {
-      x: Math.random() * (i % 2 === 0 ? -11 : 11),
-      y: Math.random() * 12
-    };
-
-    let anim = el.animate(
-      [{
-          transform: "translate(0, 0)"
-        },
-        {
-          transform: `translate(${to.x}rem, ${to.y}rem)`
-        }
-      ], {
-        duration: (Math.random() + 1) * 10000,
-        direction: "alternate-reverse",
-        iterations: Infinity
-      }
-    );
-  });
-
-</script>
+    
